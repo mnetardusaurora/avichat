@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "AviTalk",
+    "slug": "avitalk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "avitalk",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4A90D9"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.avitalk.app",
+      "requireFullScreen": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "AviTalk needs camera access to take photos for custom vocabulary symbols.",
+        "NSMicrophoneUsageDescription": "AviTalk needs microphone access to record custom audio for vocabulary words.",
+        "NSPhotoLibraryUsageDescription": "AviTalk needs photo library access to select images for custom vocabulary symbols.",
+        "NSSpeechRecognitionUsageDescription": "AviTalk uses speech synthesis to speak vocabulary words aloud.",
+        "UIRequiresFullScreen": true,
+        "UISupportedInterfaceOrientations~ipad": [
+          "UIInterfaceOrientationPortrait",
+          "UIInterfaceOrientationPortraitUpsideDown"
+        ]
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.avitalk.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4A90D9"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-secure-store",
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "AviTalk needs photo library access to select images for custom vocabulary symbols.",
+          "cameraPermission": "AviTalk needs camera access to take photos for custom vocabulary symbols."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "AviTalk needs microphone access to record custom audio for vocabulary words."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
