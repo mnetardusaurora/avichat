@@ -2,6 +2,7 @@
 
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { HomeBoard } from '@/components/boards/HomeBoard';
+import { COLORS } from '@/lib/theme';
 
 export default function HomeScreen() {
   return (
@@ -14,6 +15,6 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F8FF',
+    backgroundColor: COLORS.background,
   },
 });

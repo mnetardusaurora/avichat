@@ -1,58 +1,6 @@
 {
-  "core/more": {
-    "arasaacId": 5508,
-    "keywords": [
-      {
-        "type": 4,
-        "keyword": "more",
-        "hasLocution": true
-      }
-    ]
-  },
-  "core/help": {
-    "arasaacId": 32648,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "tr. Cooperate, collaborate.",
-        "keyword": "help",
-        "hasLocution": true
-      },
-      {
-        "keyword": "aid",
-        "hasLocution": false,
-        "type": 3
-      },
-      {
-        "keyword": "assist",
-        "hasLocution": false,
-        "type": 3
-      }
-    ]
-  },
-  "core/stop": {
-    "arasaacId": 7196,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "intr. Cease or interrupt a movement or action.",
-        "keyword": "stop",
-        "hasLocution": true
-      }
-    ]
-  },
-  "core/go": {
-    "arasaacId": 8142,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "intr. Moving from one place to another.",
-        "keyword": "go",
-        "hasLocution": true
-      }
-    ]
-  },
-  "core/want": {
+  "want": {
+    "file": "want.png",
     "arasaacId": 5441,
     "keywords": [
       {
@@ -93,7 +41,102 @@
       }
     ]
   },
-  "core/yes": {
+  "more": {
+    "file": "more.png",
+    "arasaacId": 5508,
+    "keywords": [
+      {
+        "type": 4,
+        "keyword": "more",
+        "hasLocution": true
+      }
+    ]
+  },
+  "help": {
+    "file": "help.png",
+    "arasaacId": 32648,
+    "keywords": [
+      {
+        "type": 3,
+        "meaning": "tr. Cooperate, collaborate.",
+        "keyword": "help",
+        "hasLocution": true
+      },
+      {
+        "keyword": "aid",
+        "hasLocution": false,
+        "type": 3
+      },
+      {
+        "keyword": "assist",
+        "hasLocution": false,
+        "type": 3
+      }
+    ]
+  },
+  "stop": {
+    "file": "stop.png",
+    "arasaacId": 7196,
+    "keywords": [
+      {
+        "type": 3,
+        "meaning": "intr. Cease or interrupt a movement or action.",
+        "keyword": "stop",
+        "hasLocution": true
+      }
+    ]
+  },
+  "go": {
+    "file": "go.png",
+    "arasaacId": 8142,
+    "keywords": [
+      {
+        "type": 3,
+        "meaning": "intr. Moving from one place to another.",
+        "keyword": "go",
+        "hasLocution": true
+      }
+    ]
+  },
+  "allDone": {
+    "file": "allDone.png",
+    "arasaacId": 28429,
+    "keywords": [
+      {
+        "type": 3,
+        "meaning": "tr. Put an end to one thing, finish: finally finished the job.",
+        "keyword": "finish",
+        "hasLocution": true
+      },
+      {
+        "type": 5,
+        "keyword": "I have finished!",
+        "hasLocution": false
+      },
+      {
+        "type": 5,
+        "keyword": "It is finished!",
+        "hasLocution": false
+      },
+      {
+        "type": 5,
+        "keyword": "I have finished",
+        "hasLocution": false
+      },
+      {
+        "type": 5,
+        "keyword": "enough is enough!",
+        "hasLocution": false
+      },
+      {
+        "type": 5,
+        "keyword": "enough is enough",
+        "hasLocution": false
+      }
+    ]
+  },
+  "yes": {
+    "file": "yes.png",
     "arasaacId": 5584,
     "keywords": [
       {
@@ -103,7 +146,8 @@
       }
     ]
   },
-  "core/no": {
+  "no": {
+    "file": "no.png",
     "arasaacId": 5526,
     "keywords": [
       {
@@ -114,106 +158,146 @@
       }
     ]
   },
-  "core/please": {
-    "arasaacId": 8195,
+  "mommy": {
+    "file": "mommy.png",
+    "arasaacId": 2458,
     "keywords": [
       {
-        "type": 5,
-        "meaning": "Free expression to be added to a request: acÃÂ©rcame salt, please.",
-        "keyword": "please",
-        "hasLocution": true
+        "type": 2,
+        "meaning": "Mother, Mom.",
+        "keyword": "mum",
+        "hasLocution": true,
+        "plural": "mums"
       },
       {
-        "type": 3,
-        "meaning": "tr. Urge to pleas.",
-        "keyword": "beg",
-        "hasLocution": false
-      },
-      {
-        "keyword": "beseech",
-        "type": 3,
-        "hasLocution": false
-      }
-    ]
-  },
-  "core/thank-you": {
-    "arasaacId": 8129,
-    "keywords": [
-      {
-        "type": 5,
-        "meaning": "pl. Thank Formula",
-        "keyword": "thanks",
-        "hasLocution": true
-      },
-      {
-        "keyword": "thank you",
-        "type": 5,
-        "hasLocution": false
-      }
-    ]
-  },
-  "core/sorry": {
-    "arasaacId": 11625,
-    "keywords": [
-      {
-        "type": 5,
-        "meaning": "It is used to support their own fault.",
-        "keyword": "sorry",
-        "hasLocution": true
-      },
-      {
-        "type": 3,
-        "meaning": "tr. Said who has been harmed by this: Forward the debt, offense, fault, offense or whatever.",
-        "keyword": "forgive",
-        "hasLocution": false
-      },
-      {
-        "type": 5,
-        "meaning": "Expression used by a person to apologize to his partner for some action that has hurt",
-        "keyword": "I'm sorry!",
-        "hasLocution": true
-      },
-      {
-        "keyword": "sorry!",
+        "keyword": "mom",
         "hasLocution": false,
-        "type": 5
+        "type": 2
       },
       {
-        "keyword": "I'm so sorry!",
+        "keyword": "mommy",
         "hasLocution": false,
-        "type": 5
+        "type": 2,
+        "plural": "mommys"
+      },
+      {
+        "keyword": "mother",
+        "hasLocution": true,
+        "type": 2,
+        "plural": "mothers"
       }
     ]
   },
-  "core/mine": {
-    "arasaacId": 12264,
+  "daddy": {
+    "file": "daddy.png",
+    "arasaacId": 2497,
     "keywords": [
       {
-        "type": 4,
-        "meaning": "adj. pos. com. sing. and pl. Apoc. of mine, a / mine, as that always precedes nouns: my wife, my books.",
-        "keyword": "my",
+        "type": 2,
+        "meaning": "m. Male or male, to their children.",
+        "keyword": "father",
+        "plural": "fathers",
+        "hasLocution": true
+      }
+    ]
+  },
+  "baby": {
+    "file": "baby.png",
+    "arasaacId": 6060,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Very young child or newborn.",
+        "keyword": "baby",
+        "hasLocution": true,
+        "plural": "babies"
+      }
+    ]
+  },
+  "grandma": {
+    "file": "grandma.png",
+    "arasaacId": 23710,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Over a person, the mother of his father or his mother.",
+        "keyword": "grandmother",
+        "hasLocution": true,
+        "plural": "grandmothers"
+      },
+      {
+        "type": 2,
+        "meaning": "f. grandmother",
+        "keyword": "granny",
+        "hasLocution": true,
+        "plural": "grannies"
+      },
+      {
+        "keyword": "grandma",
+        "hasLocution": true,
+        "type": 2,
+        "plural": "grandmas"
+      }
+    ]
+  },
+  "grandpa": {
+    "file": "grandpa.png",
+    "arasaacId": 23718,
+    "keywords": [
+      {
+        "type": 2,
+        "keyword": "grandfather",
+        "hasLocution": true,
+        "plural": "grandfathers"
+      },
+      {
+        "type": 2,
+        "meaning": "abuelo m.",
+        "keyword": "grandpa",
+        "hasLocution": true,
+        "plural": "grandpas"
+      }
+    ]
+  },
+  "teacher": {
+    "file": "teacher.png",
+    "arasaacId": 6556,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. and f. Person who teaches an art, a science or a trade, especially that provided the first cycle of education, or have title to it.",
+        "keyword": "schoolteacher",
+        "plural": "schoolteachers",
+        "hasLocution": false
+      },
+      {
+        "type": 2,
+        "keyword": "teacher",
+        "plural": "teachers",
         "hasLocution": true
       },
       {
-        "type": 4,
-        "meaning": "adj. and pron. pos. Indicates the membership relation between the possessed and possessor of first person singular.",
-        "keyword": "mine",
-        "hasLocution": true
+        "type": 2,
+        "keyword": "professor",
+        "plural": "professors",
+        "hasLocution": false
       }
     ]
   },
-  "core/you": {
-    "arasaacId": 6625,
+  "friend": {
+    "file": "friend.png",
+    "arasaacId": 25790,
     "keywords": [
       {
-        "type": 1,
-        "meaning": "pron. pers. Means a person who is speaking when not given you another treatment more respect.",
-        "keyword": "you",
+        "type": 2,
+        "meaning": "adj. That is friendship. U. U. tcs and affectionate treatment, although there is true friendship.",
+        "keyword": "friend",
         "hasLocution": true
       }
     ]
   },
-  "core/i": {
+  "me": {
+    "file": "me.png",
     "arasaacId": 6632,
     "keywords": [
       {
@@ -235,50 +319,8 @@
       }
     ]
   },
-  "core/it": {
-    "arasaacId": 31670,
-    "keywords": [
-      {
-        "type": 1,
-        "meaning": "pron. pers. Form of third person singular, masculine, which functions as subject and as a term in phrasal complements.",
-        "keyword": "It",
-        "hasLocution": true
-      },
-      {
-        "keyword": "itself",
-        "hasLocution": false,
-        "type": 1
-      },
-      {
-        "keyword": "with it",
-        "hasLocution": false,
-        "type": 1
-      }
-    ]
-  },
-  "core/that": {
-    "arasaacId": 6906,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. and pron. dem. Serves to point out one thing that is far from both the speaker and the person who is speaking",
-        "keyword": "that one",
-        "hasLocution": true
-      },
-      {
-        "type": 4,
-        "meaning": "pron. dem. Designates what is physically or mentally away from the speaker and the person speaking. U. m. Forms and fc adj. and cs",
-        "keyword": "that",
-        "hasLocution": true
-      },
-      {
-        "keyword": "that one over there",
-        "hasLocution": false,
-        "type": 4
-      }
-    ]
-  },
-  "food/apple": {
+  "apple": {
+    "file": "apple.png",
     "arasaacId": 2462,
     "keywords": [
       {
@@ -290,7 +332,8 @@
       }
     ]
   },
-  "food/banana": {
+  "banana": {
+    "file": "banana.png",
     "arasaacId": 2530,
     "keywords": [
       {
@@ -302,7 +345,8 @@
       }
     ]
   },
-  "food/cookie": {
+  "cookie": {
+    "file": "cookie.png",
     "arasaacId": 8312,
     "keywords": [
       {
@@ -320,7 +364,8 @@
       }
     ]
   },
-  "food/cracker": {
+  "cracker": {
+    "file": "cracker.png",
     "arasaacId": 16851,
     "keywords": [
       {
@@ -350,7 +395,8 @@
       }
     ]
   },
-  "food/cheese": {
+  "cheese": {
+    "file": "cheese.png",
     "arasaacId": 2541,
     "keywords": [
       {
@@ -362,7 +408,8 @@
       }
     ]
   },
-  "food/bread": {
+  "bread": {
+    "file": "bread.png",
     "arasaacId": 2494,
     "keywords": [
       {
@@ -393,60 +440,21 @@
       }
     ]
   },
-  "food/chicken": {
-    "arasaacId": 4952,
+  "pizza": {
+    "file": "pizza.png",
+    "arasaacId": 2527,
     "keywords": [
       {
         "type": 2,
-        "meaning": "Young fowls, especially for consumption.",
-        "keyword": "chicken",
+        "meaning": "f. Cake made with bread dough, which is placed on the tomato, cheese and other ingredients.",
+        "keyword": "pizza",
         "hasLocution": true,
-        "plural": "chickens"
-      },
-      {
-        "type": 2,
-        "meaning": "Which makes edible firewood roasted",
-        "keyword": "roast chicken",
-        "hasLocution": true,
-        "plural": "roast chickens"
-      },
-      {
-        "keyword": "spit-roast chicken",
-        "hasLocution": false,
-        "plural": "spit-roast chickens",
-        "type": 2
-      },
-      {
-        "keyword": "grilled chicken",
-        "hasLocution": false,
-        "plural": "grilled chickens",
-        "type": 2
+        "plural": "pizzas"
       }
     ]
   },
-  "food/rice": {
-    "arasaacId": 6911,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "BOT. Fruit of this plant.",
-        "keyword": "rice",
-        "hasLocution": true
-      }
-    ]
-  },
-  "food/pasta": {
-    "arasaacId": 8652,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "Dough made with flour from the outside of the wheat grain, it contains the largest amount of gluten, and water to make pasta, noodles, macaroni, etc.",
-        "keyword": "pasta",
-        "hasLocution": true
-      }
-    ]
-  },
-  "food/snack": {
+  "snack": {
+    "file": "snack.png",
     "arasaacId": 4694,
     "keywords": [
       {
@@ -462,7 +470,8 @@
       }
     ]
   },
-  "drinks/water": {
+  "water": {
+    "file": "water.png",
     "arasaacId": 32464,
     "keywords": [
       {
@@ -473,7 +482,8 @@
       }
     ]
   },
-  "drinks/milk": {
+  "milk": {
+    "file": "milk.png",
     "arasaacId": 2445,
     "keywords": [
       {
@@ -499,7 +509,8 @@
       }
     ]
   },
-  "drinks/juice": {
+  "juice": {
+    "file": "juice.png",
     "arasaacId": 11461,
     "keywords": [
       {
@@ -511,189 +522,84 @@
       }
     ]
   },
-  "drinks/cup": {
-    "arasaacId": 2582,
+  "hotChocolate": {
+    "file": "hotChocolate.png",
+    "arasaacId": 6448,
     "keywords": [
       {
         "type": 2,
-        "meaning": "f. Small bowl with handle, used to drink.",
-        "keyword": "cup",
-        "plural": "cups",
-        "hasLocution": true
-      }
-    ]
-  },
-  "people/mom": {
-    "arasaacId": 2458,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "Mother, Mom.",
-        "keyword": "mum",
+        "meaning": "Drink that is made with this paste diluted in water or milk.",
+        "keyword": "chocolate",
         "hasLocution": true,
-        "plural": "mums"
+        "plural": "chocolates"
       },
       {
-        "keyword": "mom",
-        "hasLocution": false,
+        "keyword": "hot chocolate",
+        "hasLocution": true,
+        "plural": "hot chocolates",
         "type": 2
-      },
-      {
-        "keyword": "mommy",
-        "hasLocution": false,
-        "type": 2,
-        "plural": "mommys"
-      },
-      {
-        "keyword": "mother",
-        "hasLocution": true,
-        "type": 2,
-        "plural": "mothers"
       }
     ]
   },
-  "people/dad": {
-    "arasaacId": 31146,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Family-father.",
-        "keyword": "dad",
-        "hasLocution": true,
-        "plural": "dads"
-      },
-      {
-        "keyword": "daddy",
-        "hasLocution": false,
-        "type": 2,
-        "plural": "daddies"
-      }
-    ]
-  },
-  "people/grandma": {
-    "arasaacId": 23710,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "f. Over a person, the mother of his father or his mother.",
-        "keyword": "grandmother",
-        "hasLocution": true,
-        "plural": "grandmothers"
-      },
-      {
-        "type": 2,
-        "meaning": "f. grandmother",
-        "keyword": "granny",
-        "hasLocution": true,
-        "plural": "grannies"
-      },
-      {
-        "keyword": "grandma",
-        "hasLocution": true,
-        "type": 2,
-        "plural": "grandmas"
-      }
-    ]
-  },
-  "people/grandpa": {
-    "arasaacId": 23718,
-    "keywords": [
-      {
-        "type": 2,
-        "keyword": "grandfather",
-        "hasLocution": true,
-        "plural": "grandfathers"
-      },
-      {
-        "type": 2,
-        "meaning": "abuelo m.",
-        "keyword": "grandpa",
-        "hasLocution": true,
-        "plural": "grandpas"
-      }
-    ]
-  },
-  "people/baby": {
-    "arasaacId": 6060,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Very young child or newborn.",
-        "keyword": "baby",
-        "hasLocution": true,
-        "plural": "babies"
-      }
-    ]
-  },
-  "people/teacher": {
-    "arasaacId": 6556,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. and f. Person who teaches an art, a science or a trade, especially that provided the first cycle of education, or have title to it.",
-        "keyword": "schoolteacher",
-        "plural": "schoolteachers",
-        "hasLocution": false
-      },
-      {
-        "type": 2,
-        "keyword": "teacher",
-        "plural": "teachers",
-        "hasLocution": true
-      },
-      {
-        "type": 2,
-        "keyword": "professor",
-        "plural": "professors",
-        "hasLocution": false
-      }
-    ]
-  },
-  "people/friend": {
-    "arasaacId": 25790,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "adj. That is friendship. U. U. tcs and affectionate treatment, although there is true friendship.",
-        "keyword": "friend",
-        "hasLocution": true
-      }
-    ]
-  },
-  "people/me": {
-    "arasaacId": 6632,
-    "keywords": [
-      {
-        "type": 1,
-        "meaning": "pron. Shape pron. pers. com. first person singular, as in the sentence serves as the subject.",
-        "keyword": "I",
-        "hasLocution": true
-      },
-      {
-        "type": 1,
-        "keyword": "me",
-        "hasLocution": true
-      },
-      {
-        "type": 1,
-        "meaning": "pron. person. Dative or accusative form of 1. Third person singular masculine and feminine. Preposition does not support and can be used as an enclitic.",
-        "keyword": "for me",
-        "hasLocution": true
-      }
-    ]
-  },
-  "actions/eat": {
-    "arasaacId": 6456,
+  "smoothie": {
+    "file": "smoothie.png",
+    "arasaacId": 5365,
     "keywords": [
       {
         "type": 3,
-        "meaning": "intr. Chew and shred the food into the mouth and pass into the stomach.",
-        "keyword": "eat",
+        "meaning": "tr. Move violently and repeatedly.",
+        "keyword": "shake",
         "hasLocution": true
       }
     ]
   },
-  "actions/drink": {
+  "tea": {
+    "file": "tea.png",
+    "arasaacId": 29802,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "Infusion in boiling water, the leaves of this shrub: always ask for mint tea in the restaurant Arabic.",
+        "keyword": "instant tea",
+        "hasLocution": true,
+        "plural": "instant teas"
+      },
+      {
+        "type": 2,
+        "meaning": "Infusion in boiling water, the leaves of this shrub: always ask for mint tea in the restaurant Arabic.",
+        "keyword": "tea",
+        "hasLocution": true,
+        "plural": "teas"
+      }
+    ]
+  },
+  "iceCream": {
+    "file": "iceCream.png",
+    "arasaacId": 3348,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "Type of ice cream that is put on a stick that serves as a handle",
+        "keyword": "ice cream",
+        "hasLocution": true,
+        "plural": "ice creams"
+      },
+      {
+        "type": 2,
+        "keyword": "ice lolly",
+        "hasLocution": false,
+        "plural": "ice lollies"
+      },
+      {
+        "keyword": "Popsicle",
+        "hasLocution": false,
+        "type": 2,
+        "plural": "Popsicles"
+      }
+    ]
+  },
+  "drink": {
+    "file": "drink.png",
     "arasaacId": 6061,
     "keywords": [
       {
@@ -704,7 +610,158 @@
       }
     ]
   },
-  "actions/play": {
+  "happy": {
+    "file": "happy.png",
+    "arasaacId": 35533,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. Owned or full of joy. John is happy",
+        "keyword": "happy",
+        "hasLocution": true
+      },
+      {
+        "keyword": "cheerful",
+        "hasLocution": false,
+        "type": 4
+      }
+    ]
+  },
+  "sad": {
+    "file": "sad.png",
+    "arasaacId": 35545,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. Distressed, apesadumbrado.",
+        "keyword": "sad",
+        "hasLocution": true
+      },
+      {
+        "keyword": "depressed",
+        "type": 4,
+        "hasLocution": true
+      },
+      {
+        "keyword": "unhappy",
+        "type": 4,
+        "hasLocution": true
+      }
+    ]
+  },
+  "mad": {
+    "file": "mad.png",
+    "arasaacId": 35539,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. Be upset, angry.",
+        "keyword": "angry",
+        "hasLocution": true
+      },
+      {
+        "keyword": "annoyed",
+        "type": 4,
+        "hasLocution": true
+      },
+      {
+        "keyword": "irritated",
+        "type": 4,
+        "hasLocution": false
+      }
+    ]
+  },
+  "scared": {
+    "file": "scared.png",
+    "arasaacId": 35535,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. Feeling uneasy or scared.",
+        "keyword": "scared",
+        "hasLocution": true
+      },
+      {
+        "keyword": "frightened",
+        "type": 4,
+        "hasLocution": true
+      }
+    ]
+  },
+  "tired": {
+    "file": "tired.png",
+    "arasaacId": 35537,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. Fatigue, lack of power",
+        "keyword": "tired",
+        "hasLocution": true
+      },
+      {
+        "keyword": "exhausted",
+        "type": 4,
+        "hasLocution": true
+      },
+      {
+        "keyword": "fatigued",
+        "type": 4,
+        "hasLocution": false
+      }
+    ]
+  },
+  "hungry": {
+    "file": "hungry.png",
+    "arasaacId": 4962,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. y s. Que tiene mucha hambre o necesidad de comer.",
+        "keyword": "hungry",
+        "hasLocution": true
+      }
+    ]
+  },
+  "thirsty": {
+    "file": "thirsty.png",
+    "arasaacId": 4963,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adj. Who thirsts.",
+        "keyword": "thirsty",
+        "hasLocution": true
+      }
+    ]
+  },
+  "hurt": {
+    "file": "hurt.png",
+    "arasaacId": 5484,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "Damaged by injury or concussion.",
+        "keyword": "injury",
+        "hasLocution": true,
+        "plural": "injuries"
+      },
+      {
+        "type": 2,
+        "meaning": "m.Herida produced by a sharp instrument: I made a cut on his finger.",
+        "keyword": "cut",
+        "hasLocution": true,
+        "plural": "cuts"
+      },
+      {
+        "keyword": "hurt",
+        "hasLocution": true,
+        "plural": "hurts",
+        "type": 2
+      }
+    ]
+  },
+  "play": {
+    "file": "play.png",
     "arasaacId": 23392,
     "keywords": [
       {
@@ -715,18 +772,20 @@
       }
     ]
   },
-  "actions/read": {
-    "arasaacId": 7141,
+  "eat": {
+    "file": "eat.png",
+    "arasaacId": 6456,
     "keywords": [
       {
         "type": 3,
-        "meaning": "tr. Skip the light writing or in print at understanding the significance of the characters used.",
-        "keyword": "read",
-        "hasLocution": false
+        "meaning": "intr. Chew and shred the food into the mouth and pass into the stomach.",
+        "keyword": "eat",
+        "hasLocution": true
       }
     ]
   },
-  "actions/sleep": {
+  "sleep": {
+    "file": "sleep.png",
     "arasaacId": 6479,
     "keywords": [
       {
@@ -737,7 +796,56 @@
       }
     ]
   },
-  "actions/walk": {
+  "read": {
+    "file": "read.png",
+    "arasaacId": 7141,
+    "keywords": [
+      {
+        "type": 3,
+        "meaning": "tr. Skip the light writing or in print at understanding the significance of the characters used.",
+        "keyword": "read",
+        "hasLocution": false
+      }
+    ]
+  },
+  "watch": {
+    "file": "watch.png",
+    "arasaacId": 29123,
+    "keywords": [
+      {
+        "type": 3,
+        "meaning": "tr. Perceived through the eyes of television",
+        "keyword": "watch television",
+        "hasLocution": true
+      },
+      {
+        "type": 3,
+        "meaning": "tr. Perceived through the eyes of television",
+        "keyword": "watch TV",
+        "hasLocution": true
+      }
+    ]
+  },
+  "hug": {
+    "file": "hug.png",
+    "arasaacId": 4550,
+    "keywords": [
+      {
+        "type": 2,
+        "keyword": "hug",
+        "hasLocution": false,
+        "plural": "hugs"
+      },
+      {
+        "type": 2,
+        "keyword": "embrace",
+        "hasLocution": false,
+        "plural": "embraces"
+      }
+    ]
+  },
+  "walk": {
+    "file": "walk.png",
     "arasaacId": 29951,
     "keywords": [
       {
@@ -763,7 +871,8 @@
       }
     ]
   },
-  "actions/run": {
+  "run": {
+    "file": "run.png",
     "arasaacId": 6465,
     "keywords": [
       {
@@ -774,539 +883,96 @@
       }
     ]
   },
-  "actions/sit": {
-    "arasaacId": 6611,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "tr. Put or place one so that it is supported and resting on the buttocks.",
-        "keyword": "sit",
-        "hasLocution": false
-      },
-      {
-        "keyword": "sit down",
-        "hasLocution": false,
-        "type": 3
-      }
-    ]
-  },
-  "actions/stand": {
-    "arasaacId": 13370,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "intr. Remain upright, standing firmly on foot or",
-        "keyword": "stand",
-        "hasLocution": false
-      },
-      {
-        "keyword": "stand up",
-        "hasLocution": false,
-        "type": 3
-      }
-    ]
-  },
-  "actions/open": {
-    "arasaacId": 24825,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "tr. Separate frame leaf or leaves a door or window, making them turn on their hinges, or separate or remove anything which is enclosed with an opening, to cease to apply.",
-        "keyword": "open",
-        "hasLocution": true
-      },
-      {
-        "keyword": "open up",
-        "hasLocution": false,
-        "type": 3
-      },
-      {
-        "keyword": "unfold",
-        "type": 3,
-        "hasLocution": false
-      }
-    ]
-  },
-  "actions/close": {
-    "arasaacId": 30383,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adv. l. and t. Near in space or time. Before pronoun or noun, is followed by prep. of",
-        "keyword": "close",
-        "hasLocution": true
-      },
-      {
-        "keyword": "near",
-        "hasLocution": true,
-        "type": 4
-      },
-      {
-        "keyword": "nearby",
-        "type": 4,
-        "hasLocution": false
-      }
-    ]
-  },
-  "actions/push": {
-    "arasaacId": 6485,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "tr. Straining against someone or something to move, hold or reject it.",
-        "keyword": "push",
-        "hasLocution": true
-      }
-    ]
-  },
-  "actions/pull": {
-    "arasaacId": 36601,
-    "keywords": [
-      {
-        "keyword": "pull the chain",
-        "hasLocution": true,
-        "type": 3
-      },
-      {
-        "keyword": "flush the toilet",
-        "type": 3,
-        "hasLocution": false
-      }
-    ]
-  },
-  "actions/hug": {
-    "arasaacId": 4550,
+  "home": {
+    "file": "home.png",
+    "arasaacId": 6964,
     "keywords": [
       {
         "type": 2,
-        "keyword": "hug",
-        "hasLocution": false,
-        "plural": "hugs"
+        "meaning": "f. Building or part of it to live.",
+        "keyword": "house",
+        "plural": "houses",
+        "hasLocution": true
       },
       {
+        "keyword": "household",
         "type": 2,
-        "keyword": "embrace",
-        "hasLocution": false,
-        "plural": "embraces"
-      }
-    ]
-  },
-  "actions/kiss": {
-    "arasaacId": 6062,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "tr. Touch or press with a lip movement, impulse of love or the desire, in friendship or reverence.",
-        "keyword": "kiss",
-        "hasLocution": true
-      },
-      {
-        "type": 3,
-        "meaning": "tr. Touch or press with a lip movement, impulse of love or the desire, in friendship or reverence.",
-        "keyword": "give a kiss",
-        "hasLocution": true
-      }
-    ]
-  },
-  "feelings/happy": {
-    "arasaacId": 35533,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. Owned or full of joy. John is happy",
-        "keyword": "happy",
-        "hasLocution": true
-      },
-      {
-        "keyword": "cheerful",
-        "hasLocution": false,
-        "type": 4
-      }
-    ]
-  },
-  "feelings/sad": {
-    "arasaacId": 35545,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. Distressed, apesadumbrado.",
-        "keyword": "sad",
-        "hasLocution": true
-      },
-      {
-        "keyword": "depressed",
-        "type": 4,
-        "hasLocution": true
-      },
-      {
-        "keyword": "unhappy",
-        "type": 4,
-        "hasLocution": true
-      }
-    ]
-  },
-  "feelings/angry": {
-    "arasaacId": 35539,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. Be upset, angry.",
-        "keyword": "angry",
-        "hasLocution": true
-      },
-      {
-        "keyword": "annoyed",
-        "type": 4,
-        "hasLocution": true
-      },
-      {
-        "keyword": "irritated",
-        "type": 4,
-        "hasLocution": false
-      }
-    ]
-  },
-  "feelings/scared": {
-    "arasaacId": 35535,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. Feeling uneasy or scared.",
-        "keyword": "scared",
-        "hasLocution": true
-      },
-      {
-        "keyword": "frightened",
-        "type": 4,
-        "hasLocution": true
-      }
-    ]
-  },
-  "feelings/tired": {
-    "arasaacId": 35537,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. Fatigue, lack of power",
-        "keyword": "tired",
-        "hasLocution": true
-      },
-      {
-        "keyword": "exhausted",
-        "type": 4,
-        "hasLocution": true
-      },
-      {
-        "keyword": "fatigued",
-        "type": 4,
-        "hasLocution": false
-      }
-    ]
-  },
-  "feelings/sick": {
-    "arasaacId": 7040,
-    "keywords": [
-      {
-        "type": 3,
-        "meaning": "Contracting disease. U. prnl tc.",
-        "keyword": "get sick",
+        "plural": "households",
         "hasLocution": false
       },
       {
-        "keyword": "come down",
-        "type": 3,
-        "hasLocution": false
-      },
-      {
-        "keyword": "sicken",
-        "type": 3,
-        "hasLocution": false
-      },
-      {
-        "keyword": "fall ill",
-        "type": 3,
-        "hasLocution": false
-      },
-      {
-        "keyword": "get ill",
-        "type": 3,
-        "hasLocution": false
-      },
-      {
-        "keyword": "ill",
-        "type": 4,
-        "hasLocution": true
-      },
-      {
-        "keyword": "sick",
-        "type": 4,
-        "hasLocution": false
-      }
-    ]
-  },
-  "feelings/hungry": {
-    "arasaacId": 4962,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. y s. Que tiene mucha hambre o necesidad de comer.",
-        "keyword": "hungry",
+        "keyword": "home",
+        "type": 2,
+        "plural": "homes",
         "hasLocution": true
       }
     ]
   },
-  "feelings/thirsty": {
-    "arasaacId": 4963,
-    "keywords": [
-      {
-        "type": 4,
-        "meaning": "adj. Who thirsts.",
-        "keyword": "thirsty",
-        "hasLocution": true
-      }
-    ]
-  },
-  "feelings/hurt": {
-    "arasaacId": 5484,
+  "school": {
+    "file": "school.png",
+    "arasaacId": 32446,
     "keywords": [
       {
         "type": 2,
-        "meaning": "Damaged by injury or concussion.",
-        "keyword": "injury",
+        "meaning": "m. Educational establishment.",
+        "keyword": "school",
         "hasLocution": true,
-        "plural": "injuries"
+        "plural": "schools"
       },
       {
         "type": 2,
-        "meaning": "m.Herida produced by a sharp instrument: I made a cut on his finger.",
-        "keyword": "cut",
+        "meaning": "m. State facility in which the host university for high school.",
+        "keyword": "high school",
         "hasLocution": true,
-        "plural": "cuts"
+        "plural": "high schools"
       },
       {
-        "keyword": "hurt",
+        "type": 2,
+        "keyword": "secondary school",
+        "hasLocution": false,
+        "plural": "secondary schools"
+      },
+      {
+        "keyword": "high school",
         "hasLocution": true,
-        "plural": "hurts",
+        "plural": "high schools",
         "type": 2
       }
     ]
   },
-  "feelings/love": {
-    "arasaacId": 37721,
+  "park": {
+    "file": "park.png",
+    "arasaacId": 5379,
     "keywords": [
       {
-        "keyword": "like",
-        "hasLocution": true,
-        "type": 3
-      },
-      {
-        "keyword": "love",
         "type": 3,
-        "hasLocution": true
-      },
-      {
-        "keyword": "enjoy",
-        "type": 3,
-        "hasLocution": false
-      }
-    ]
-  },
-  "feelings/like": {
-    "arasaacId": 37826,
-    "keywords": [
-      {
-        "keyword": "like",
-        "type": 3,
-        "hasLocution": true
-      },
-      {
-        "keyword": "enjoy",
-        "type": 3,
-        "hasLocution": false
-      },
-      {
-        "keyword": "I like that",
-        "hasLocution": true,
-        "type": 5
-      }
-    ]
-  },
-  "objects/ball": {
-    "arasaacId": 3241,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "f. Ball, generally flexible material, hollow or solid, which is used in various games.",
-        "keyword": "ball",
-        "hasLocution": true,
-        "plural": "balls"
-      },
-      {
-        "type": 2,
-        "meaning": "f. Ball, flexible material, hollow or solid, which is used in various beach games.",
-        "keyword": "beach ball",
-        "hasLocution": true,
-        "plural": "beach balls"
-      },
-      {
-        "keyword": "beachball",
-        "hasLocution": false,
-        "plural": "beachballs",
-        "type": 2
-      }
-    ]
-  },
-  "objects/book": {
-    "arasaacId": 25191,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Sheets set handwritten or printed, stitched or bound, form a volume.",
-        "keyword": "book",
-        "hasLocution": true,
-        "plural": "books"
-      }
-    ]
-  },
-  "objects/toy": {
-    "arasaacId": 9813,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Objects that are entertaining and children play.",
-        "keyword": "toys",
-        "hasLocution": true
-      },
-      {
-        "type": 2,
-        "meaning": "m. Attractive object with which they entertain children.",
-        "keyword": "toy",
+        "meaning": "Temporarily placed in a public place designated for that purpose by the authority, cars or other vehicles.",
+        "keyword": "park",
         "hasLocution": true
       }
     ]
   },
-  "objects/blanket": {
-    "arasaacId": 2459,
+  "store": {
+    "file": "store.png",
+    "arasaacId": 35695,
     "keywords": [
       {
         "type": 2,
-        "meaning": "f. Rectangular piece of thick fabric for warmth in bed.",
-        "keyword": "blanket",
+        "meaning": "f. Premises where sold to the public retail items",
+        "keyword": "shop",
         "hasLocution": true,
-        "plural": "blankets"
-      }
-    ]
-  },
-  "objects/phone": {
-    "arasaacId": 26479,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Media, through a set of equipment and conveyor systems, transmit sound as remote electromagnetic signal.",
-        "keyword": "telephone",
-        "plural": "telephones",
-        "hasLocution": true
+        "plural": "shops"
       },
       {
-        "keyword": "phone",
-        "type": 2,
-        "plural": "phones",
-        "hasLocution": false
-      }
-    ]
-  },
-  "objects/tv": {
-    "arasaacId": 25498,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "f. col. Short for television.",
-        "keyword": "television",
-        "hasLocution": true,
-        "plural": "televisions"
-      },
-      {
-        "type": 2,
-        "meaning": "INFORM. Computer screen.",
-        "keyword": "screen",
-        "hasLocution": true,
-        "plural": "screens"
-      },
-      {
-        "type": 2,
-        "meaning": "LCD. This is a power system data presentation consists of 2 transparent conductive layer and between a particular crystalline material (liquid crystal) that have the ability to direct the light as it passes.",
-        "keyword": "LCD screen",
-        "hasLocution": true,
-        "plural": "LCD screens"
-      },
-      {
-        "keyword": "HDTV",
-        "hasLocution": false,
-        "type": 2
-      },
-      {
-        "keyword": "TV",
-        "hasLocution": false,
-        "type": 2
-      }
-    ]
-  },
-  "objects/car": {
-    "arasaacId": 2339,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Motor vehicle, four wheels, used for the carriage of persons",
-        "keyword": "car",
-        "hasLocution": true,
-        "plural": "cars"
-      },
-      {
-        "type": 2,
-        "meaning": "Private motor: a passenger collided with a truck.",
-        "keyword": "family touring car",
-        "hasLocution": true,
-        "plural": "family touring cars"
-      },
-      {
-        "keyword": "auto",
-        "type": 2,
-        "plural": "autos",
-        "hasLocution": false
-      }
-    ]
-  },
-  "objects/bed": {
-    "arasaacId": 25900,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "f. Furniture to sleep or rest, equipped with mattress, sheets, blankets, pillows, etc.., Or all of it.",
-        "keyword": "bed",
-        "hasLocution": true,
-        "plural": "beds"
-      }
-    ]
-  },
-  "objects/diaper": {
-    "arasaacId": 22017,
-    "keywords": [
-      {
-        "type": 2,
-        "meaning": "m. Cloth or an absorbent material that makes babies like a panty to soak in urine, diaper your child.",
-        "keyword": "nappy",
-        "hasLocution": true,
-        "plural": "nappies"
-      },
-      {
-        "keyword": "diaper",
+        "keyword": "store",
         "hasLocution": false,
         "type": 2,
-        "plural": "diapers"
+        "plural": "stores"
       }
     ]
   },
-  "objects/potty": {
+  "bathroom": {
+    "file": "bathroom.png",
     "arasaacId": 5921,
     "keywords": [
       {
@@ -1346,30 +1012,185 @@
       }
     ]
   },
-  "objects/bath": {
-    "arasaacId": 2272,
+  "bedroom": {
+    "file": "bedroom.png",
+    "arasaacId": 5988,
     "keywords": [
       {
         "type": 2,
-        "keyword": "bathtub",
-        "plural": "bathtubs",
-        "hasLocution": false
-      },
+        "meaning": "m. Sleeping room.",
+        "keyword": "bedroom",
+        "hasLocution": true,
+        "plural": "bedrooms"
+      }
+    ]
+  },
+  "kitchen": {
+    "file": "kitchen.png",
+    "arasaacId": 10752,
+    "keywords": [
       {
-        "keyword": "bath",
-        "plural": "baths",
         "type": 2,
+        "meaning": "f. Part of the house where food is prepared.",
+        "keyword": "kitchen",
+        "hasLocution": true,
+        "plural": "kitchens"
+      }
+    ]
+  },
+  "outside": {
+    "file": "outside.png",
+    "arasaacId": 5475,
+    "keywords": [
+      {
+        "type": 4,
+        "meaning": "adv. l. In or toward the outside.",
+        "keyword": "outside",
+        "hasLocution": true
+      }
+    ]
+  },
+  "toy": {
+    "file": "toy.png",
+    "arasaacId": 9813,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Objects that are entertaining and children play.",
+        "keyword": "toys",
         "hasLocution": true
       },
       {
-        "keyword": "tub",
         "type": 2,
-        "plural": "tubs",
+        "meaning": "m. Attractive object with which they entertain children.",
+        "keyword": "toy",
+        "hasLocution": true
+      }
+    ]
+  },
+  "ball": {
+    "file": "ball.png",
+    "arasaacId": 3241,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Ball, generally flexible material, hollow or solid, which is used in various games.",
+        "keyword": "ball",
+        "hasLocution": true,
+        "plural": "balls"
+      },
+      {
+        "type": 2,
+        "meaning": "f. Ball, flexible material, hollow or solid, which is used in various beach games.",
+        "keyword": "beach ball",
+        "hasLocution": true,
+        "plural": "beach balls"
+      },
+      {
+        "keyword": "beachball",
+        "hasLocution": false,
+        "plural": "beachballs",
+        "type": 2
+      }
+    ]
+  },
+  "book": {
+    "file": "book.png",
+    "arasaacId": 25191,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Sheets set handwritten or printed, stitched or bound, form a volume.",
+        "keyword": "book",
+        "hasLocution": true,
+        "plural": "books"
+      }
+    ]
+  },
+  "phone": {
+    "file": "phone.png",
+    "arasaacId": 26479,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Media, through a set of equipment and conveyor systems, transmit sound as remote electromagnetic signal.",
+        "keyword": "telephone",
+        "plural": "telephones",
+        "hasLocution": true
+      },
+      {
+        "keyword": "phone",
+        "type": 2,
+        "plural": "phones",
         "hasLocution": false
       }
     ]
   },
-  "objects/shoes": {
+  "tv": {
+    "file": "tv.png",
+    "arasaacId": 25498,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. col. Short for television.",
+        "keyword": "television",
+        "hasLocution": true,
+        "plural": "televisions"
+      },
+      {
+        "type": 2,
+        "meaning": "INFORM. Computer screen.",
+        "keyword": "screen",
+        "hasLocution": true,
+        "plural": "screens"
+      },
+      {
+        "type": 2,
+        "meaning": "LCD. This is a power system data presentation consists of 2 transparent conductive layer and between a particular crystalline material (liquid crystal) that have the ability to direct the light as it passes.",
+        "keyword": "LCD screen",
+        "hasLocution": true,
+        "plural": "LCD screens"
+      },
+      {
+        "keyword": "HDTV",
+        "hasLocution": false,
+        "type": 2
+      },
+      {
+        "keyword": "TV",
+        "hasLocution": false,
+        "type": 2
+      }
+    ]
+  },
+  "blanket": {
+    "file": "blanket.png",
+    "arasaacId": 2459,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Rectangular piece of thick fabric for warmth in bed.",
+        "keyword": "blanket",
+        "hasLocution": true,
+        "plural": "blankets"
+      }
+    ]
+  },
+  "cup": {
+    "file": "cup.png",
+    "arasaacId": 2582,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Small bowl with handle, used to drink.",
+        "keyword": "cup",
+        "plural": "cups",
+        "hasLocution": true
+      }
+    ]
+  },
+  "shoes": {
+    "file": "shoes.png",
     "arasaacId": 2775,
     "keywords": [
       {
@@ -1385,14 +1206,339 @@
       }
     ]
   },
-  "objects/clothes": {
-    "arasaacId": 7233,
+  "dog": {
+    "file": "dog.png",
+    "arasaacId": 7202,
     "keywords": [
       {
         "type": 2,
-        "meaning": "f. Any piece of cloth used to dress up: you are walking around the clothing market positions.",
-        "keyword": "clothes",
+        "meaning": "m. and f. Domestic carnivorous mammal of the Canidae family, size, shape and coat very different, due to the different races nited obtained by hybridization, which is adapted to all regions of the Earth, is faithful.",
+        "keyword": "dog",
+        "hasLocution": true,
+        "plural": "dogs"
+      },
+      {
+        "keyword": "hound",
+        "hasLocution": false,
+        "type": 2,
+        "plural": "hounds"
+      }
+    ]
+  },
+  "cat": {
+    "file": "cat.png",
+    "arasaacId": 7114,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. and f. Domestic carnivore round head, very rough tongue, short legs, strong claws armed, sharp and retractable, soft thick coat of many colors, and eyes whose pupils were dilated to see in the dark.",
+        "keyword": "cat",
+        "hasLocution": true,
+        "plural": "cats"
+      },
+      {
+        "type": 2,
+        "meaning": "m. coloq. gato",
+        "keyword": "pussy",
+        "hasLocution": true,
+        "plural": "pussies"
+      },
+      {
+        "keyword": "kitty",
+        "hasLocution": false,
+        "type": 2,
+        "plural": "kitties"
+      }
+    ]
+  },
+  "bird": {
+    "file": "bird.png",
+    "arasaacId": 2490,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. and f. Any land birds, flying, with straight bill not very strong and generally small size.",
+        "keyword": "bird",
+        "hasLocution": true,
+        "plural": "birds"
+      }
+    ]
+  },
+  "fish": {
+    "file": "fish.png",
+    "arasaacId": 2520,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Aquatic vertebrate animal gills and variable temperature, oviparous, with tips on how fins suitable for swimming and skin usually covered with scales.",
+        "keyword": "fish",
+        "plural": "fishes",
         "hasLocution": true
+      }
+    ]
+  },
+  "bunny": {
+    "file": "bunny.png",
+    "arasaacId": 2351,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. and f. Lagomorph rodent mammal, about four decimeters long, thick hair, long ears and short tail, the meat is edible and its skin is used as a shelter.",
+        "keyword": "rabbit",
+        "hasLocution": true,
+        "plural": "rabbits"
+      }
+    ]
+  },
+  "horse": {
+    "file": "horse.png",
+    "arasaacId": 2294,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Equine mammal hoofed, strong, legs ending in hooves, elongated head, small ears, long tail and mane on the neck.",
+        "keyword": "horse",
+        "plural": "horses",
+        "hasLocution": true
+      }
+    ]
+  },
+  "cow": {
+    "file": "cow.png",
+    "arasaacId": 2609,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Female bull.",
+        "keyword": "cow",
+        "hasLocution": true,
+        "plural": "cows"
+      }
+    ]
+  },
+  "pig": {
+    "file": "pig.png",
+    "arasaacId": 24972,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. and f. Domestic mammals, large head, thick body and bristles, short legs, floppy ears and flat nose. Are breeding and fattening for meat and fat.",
+        "keyword": "pig",
+        "hasLocution": true,
+        "plural": "pigs"
+      },
+      {
+        "type": 2,
+        "meaning": "m. Priming pig goes to slaughter.",
+        "keyword": "hog",
+        "hasLocution": true,
+        "plural": "hogs"
+      }
+    ]
+  },
+  "people": {
+    "file": "people.png",
+    "arasaacId": 7116,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Group of people.",
+        "keyword": "people",
+        "hasLocution": true
+      },
+      {
+        "type": 2,
+        "meaning": "Men and women whose name is ignored or omitted.",
+        "keyword": "persons",
+        "hasLocution": true
+      },
+      {
+        "type": 2,
+        "meaning": "m. Plurality of beings or things that form a whole, material or mental.",
+        "keyword": "group",
+        "hasLocution": true
+      }
+    ]
+  },
+  "food": {
+    "file": "food.png",
+    "arasaacId": 4610,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Set of things we eat.",
+        "keyword": "food",
+        "hasLocution": true
+      }
+    ]
+  },
+  "drinks": {
+    "file": "drinks.png",
+    "arasaacId": 4575,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Any liquid you drink.",
+        "keyword": "drink",
+        "hasLocution": true
+      },
+      {
+        "type": 2,
+        "meaning": "Any liquid you drink.",
+        "keyword": "drinks",
+        "hasLocution": true
+      },
+      {
+        "keyword": "beverage",
+        "hasLocution": false,
+        "type": 2
+      },
+      {
+        "keyword": "beverages",
+        "type": 2,
+        "hasLocution": false
+      }
+    ]
+  },
+  "feelings": {
+    "file": "feelings.png",
+    "arasaacId": 37190,
+    "keywords": [
+      {
+        "hasLocution": true,
+        "keyword": "feelings",
+        "type": 2
+      },
+      {
+        "keyword": "physical sensations",
+        "type": 2,
+        "hasLocution": false
+      }
+    ]
+  },
+  "actions": {
+    "file": "actions.png",
+    "arasaacId": 7297,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. GRAM. Conjugable parts of speech that express action and the state of the subject and have the function of core syntactic predicate verbs in this sentence are composed.",
+        "keyword": "verbs",
+        "hasLocution": true
+      },
+      {
+        "type": 2,
+        "meaning": "m. GRAM. Conjugate part prayer that expresses the action and the state of the subject and serves as the core syntactic predicate verbs in this sentence are composed.",
+        "keyword": "verb",
+        "hasLocution": true
+      },
+      {
+        "keyword": "action",
+        "hasLocution": true,
+        "type": 2
+      },
+      {
+        "keyword": "actions",
+        "type": 2,
+        "hasLocution": false
+      }
+    ]
+  },
+  "places": {
+    "file": "places.png",
+    "arasaacId": 9819,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "Site site",
+        "keyword": "place",
+        "hasLocution": true,
+        "plural": "places"
+      },
+      {
+        "keyword": "position",
+        "hasLocution": true,
+        "type": 2,
+        "plural": "positions"
+      }
+    ]
+  },
+  "things": {
+    "file": "things.png",
+    "arasaacId": 11318,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. Everything that exists, either real or unreal, concrete or abstract.",
+        "keyword": "things",
+        "hasLocution": true
+      },
+      {
+        "type": 2,
+        "meaning": "m. What material has the character and inanimate thing: I like to surround myself with beautiful things.",
+        "keyword": "object",
+        "hasLocution": true
+      },
+      {
+        "type": 2,
+        "meaning": "m. pl. What material has the character and inanimate thing: I like to surround myself with beautiful things.",
+        "keyword": "objects",
+        "hasLocution": true
+      }
+    ]
+  },
+  "animals": {
+    "file": "animals.png",
+    "arasaacId": 8025,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "m. Organic being who lives, feels and moves of their own accord.",
+        "keyword": "animal",
+        "hasLocution": true,
+        "plural": "animals"
+      },
+      {
+        "type": 2,
+        "meaning": "m. despect. animal",
+        "keyword": "critter",
+        "hasLocution": false,
+        "plural": "critters"
+      },
+      {
+        "keyword": "creature",
+        "hasLocution": false,
+        "type": 2,
+        "plural": "creatures"
+      }
+    ]
+  },
+  "categories": {
+    "file": "categories.png",
+    "arasaacId": 30205,
+    "keywords": [
+      {
+        "type": 2,
+        "keyword": "category",
+        "hasLocution": false
+      },
+      {
+        "type": 2,
+        "keyword": "categories",
+        "hasLocution": false
+      }
+    ]
+  },
+  "back": {
+    "file": "back.png",
+    "arasaacId": 2748,
+    "keywords": [
+      {
+        "type": 2,
+        "meaning": "f. ANAT. Back of the human body, from shoulders to waist.",
+        "keyword": "back",
+        "hasLocution": true,
+        "plural": "backs"
       }
     ]
   }

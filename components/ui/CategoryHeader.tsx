@@ -1,8 +1,9 @@
-// Category header with back button and title
+// Category header with back button and title - Avocado Theme
 
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import * as Haptics from 'expo-haptics';
+import { COLORS, FONTS, SPACING, RADIUS } from '@/lib/theme';
 
 export interface CategoryHeaderProps {
   title: string;
@@ -30,7 +31,7 @@ export const CategoryHeader: React.FC<CategoryHeaderProps> = ({
           accessibilityRole="button"
           testID="back-button"
         >
-          <Text style={styles.backText}>⬅️ Back</Text>
+          <Text style={styles.backText}>← Back</Text>
         </TouchableOpacity>
       ) : (
         <View style={styles.placeholder} />
@@ -48,27 +49,27 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    backgroundColor: '#4169E1',
-    borderBottomWidth: 2,
-    borderBottomColor: '#2F4F8F',
+    paddingHorizontal: SPACING.lg,
+    paddingVertical: SPACING.md,
+    backgroundColor: COLORS.primary,
+    borderBottomWidth: 3,
+    borderBottomColor: COLORS.primaryDark,
   },
   backButton: {
-    paddingHorizontal: 12,
-    paddingVertical: 8,
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.sm,
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
-    borderRadius: 8,
+    borderRadius: RADIUS.sm,
   },
   backText: {
-    fontSize: 18,
+    fontSize: FONTS.labelMedium,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: COLORS.textLight,
   },
   title: {
-    fontSize: 28,
+    fontSize: FONTS.title,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: COLORS.textLight,
     textAlign: 'center',
     flex: 1,
   },

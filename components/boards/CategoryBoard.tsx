@@ -1,4 +1,4 @@
-// Category sub-board layout
+// Category sub-board layout - Avocado Theme
 
 import React, { useCallback } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
@@ -9,6 +9,7 @@ import { SymbolGrid } from '@/components/ui/SymbolGrid';
 import { CategoryHeader } from '@/components/ui/CategoryHeader';
 import { useSpeech } from '@/hooks/useSpeech';
 import { useSymbolImage } from '@/hooks/useSymbolImage';
+import { COLORS, FONTS } from '@/lib/theme';
 
 export interface CategoryBoardProps {
   boardId: string;
@@ -85,7 +86,7 @@ export const CategoryBoard: React.FC<CategoryBoardProps> = ({ boardId }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F8FF',
+    backgroundColor: COLORS.background,
   },
   errorContainer: {
     flex: 1,
@@ -93,7 +94,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   errorText: {
-    fontSize: 24,
-    color: '#DC143C',
+    fontSize: FONTS.title,
+    color: COLORS.error,
   },
 });

@@ -11,6 +11,10 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   if (err.message.includes('Cannot manually set color scheme')) {
     return false;
   }
+  // Ignore import.meta errors (NativeWind web compatibility)
+  if (err.message.includes("Cannot use 'import.meta' outside a module")) {
+    return false;
+  }
   // Ignore other non-critical errors
   if (err.message.includes('ResizeObserver loop')) {
     return false;

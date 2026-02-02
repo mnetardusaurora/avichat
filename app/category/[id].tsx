@@ -3,6 +3,7 @@
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { CategoryBoard } from '@/components/boards/CategoryBoard';
+import { COLORS } from '@/lib/theme';
 
 export default function CategoryScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -17,6 +18,6 @@ export default function CategoryScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F8FF',
+    backgroundColor: COLORS.background,
   },
 });

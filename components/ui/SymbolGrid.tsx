@@ -1,13 +1,16 @@
 // 3x3 grid layout for symbol buttons
+// Uses ARASAAC symbols (CC BY-NC-SA 4.0 - Sergio Palao / ARASAAC)
 
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Symbol } from '@/data/symbols';
 import { SymbolButton } from './SymbolButton';
+import { SymbolImageInfo } from '@/hooks/useSymbolImage';
+import { SPACING } from '@/lib/theme';
 
 export interface SymbolGridProps {
   symbols: Symbol[];
-  getImageForSymbol: (symbolId: string, defaultIcon: string) => { type: 'emoji' | 'image'; value: string };
+  getImageForSymbol: (symbolId: string, fallbackEmoji: string) => SymbolImageInfo;
   onSymbolPress: (symbol: Symbol) => void;
   onSymbolLongPress?: (symbol: Symbol) => void;
 }
@@ -50,7 +53,7 @@ export const SymbolGrid: React.FC<SymbolGridProps> = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 12,
+    padding: SPACING.md,
     justifyContent: 'center',
   },
   row: {

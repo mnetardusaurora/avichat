@@ -1,9 +1,9 @@
-// Root layout with navigation
+// Root layout with navigation - Avocado Theme
 
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { View, StyleSheet } from 'react-native';
-import '../global.css';
+import { COLORS } from '@/lib/theme';
 
 export default function RootLayout() {
   return (
@@ -13,7 +13,7 @@ export default function RootLayout() {
         screenOptions={{
           headerShown: false,
           animation: 'slide_from_right',
-          contentStyle: { backgroundColor: '#F0F8FF' },
+          contentStyle: { backgroundColor: COLORS.background },
         }}
       />
     </View>
@@ -23,6 +23,6 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F8FF',
+    backgroundColor: COLORS.background,
   },
 });

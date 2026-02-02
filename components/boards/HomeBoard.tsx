@@ -1,4 +1,4 @@
-// Home screen board layout with core words
+// Home screen board layout with core words - Avocado Theme
 
 import React, { useCallback } from 'react';
 import { View, StyleSheet } from 'react-native';
@@ -9,6 +9,7 @@ import { SymbolGrid } from '@/components/ui/SymbolGrid';
 import { CategoryHeader } from '@/components/ui/CategoryHeader';
 import { useSpeech } from '@/hooks/useSpeech';
 import { useSymbolImage } from '@/hooks/useSymbolImage';
+import { COLORS } from '@/lib/theme';
 
 export const HomeBoard: React.FC = () => {
   const router = useRouter();
@@ -40,7 +41,7 @@ export const HomeBoard: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <CategoryHeader title="AviChat" onBackPress={() => {}} showBack={false} />
+      <CategoryHeader title="🥑 AviChat" onBackPress={() => {}} showBack={false} />
       <SymbolGrid
         symbols={homeBoard.symbols}
         getImageForSymbol={getImageForSymbol}
@@ -54,6 +55,6 @@ export const HomeBoard: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F8FF',
+    backgroundColor: COLORS.background,
   },
 });

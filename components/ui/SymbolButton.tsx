@@ -1,4 +1,5 @@
 // Main tappable symbol component for AAC communication
+// Uses ARASAAC symbols (CC BY-NC-SA 4.0 - Sergio Palao / ARASAAC)
 
 import React, { useCallback } from 'react';
 import {
@@ -11,10 +12,12 @@ import {
 } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Symbol } from '@/data/symbols';
+import { SymbolImageInfo } from '@/hooks/useSymbolImage';
+import { COLORS, FONTS, SPACING, RADIUS } from '@/lib/theme';
 
 export interface SymbolButtonProps {
   symbol: Symbol;
-  imageInfo: { type: 'emoji' | 'image'; value: string };
+  imageInfo: SymbolImageInfo;
   onPress: (symbol: Symbol) => void;
   onLongPress?: (symbol: Symbol) => void;
   testID?: string;
@@ -29,7 +32,6 @@ export const SymbolButton: React.FC<SymbolButtonProps> = ({
 }) => {
   const handlePress = useCallback(
     (event: GestureResponderEvent) => {
-      // Trigger haptic feedback
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
       onPress(symbol);
     },
@@ -46,6 +48,34 @@ export const SymbolButton: React.FC<SymbolButtonProps> = ({
     [symbol, onLongPress]
   );
 
+  // Render the appropriate image type
+  const renderImage = () => {
+    if (imageInfo.type === 'bundled' && imageInfo.source) {
+      return (
+        <Image
+          source={imageInfo.source}
+          style={styles.symbolImage}
+          resizeMode="contain"
+        />
+      );
+    }
+
+    if (imageInfo.type === 'custom' && imageInfo.uri) {
+      return (
+        <Image
+          source={{ uri: imageInfo.uri }}
+          style={styles.symbolImage}
+          resizeMode="cover"
+        />
+      );
+    }
+
+    // Fallback to emoji
+    return (
+      <Text style={styles.emoji}>{imageInfo.emoji || symbol.icon}</Text>
+    );
+  };
+
   return (
     <TouchableOpacity
       testID={testID}
@@ -58,23 +88,17 @@ export const SymbolButton: React.FC<SymbolButtonProps> = ({
       accessibilityHint={`Tap to say ${symbol.label}`}
       style={[
         styles.button,
-        { backgroundColor: symbol.backgroundColor || '#E5E5E5' },
+        { backgroundColor: symbol.backgroundColor || COLORS.primaryLight },
       ]}
     >
-      <View style={styles.iconContainer}>
-        {imageInfo.type === 'image' ? (
-          <Image
-            source={{ uri: imageInfo.value }}
-            style={styles.customImage}
-            resizeMode="cover"
-          />
-        ) : (
-          <Text style={styles.emoji}>{imageInfo.value}</Text>
-        )}
+      <View style={styles.imageContainer}>
+        {renderImage()}
       </View>
-      <Text style={styles.label} numberOfLines={2} adjustsFontSizeToFit>
-        {symbol.label}
-      </Text>
+      <View style={styles.labelContainer}>
+        <Text style={styles.label} numberOfLines={2} adjustsFontSizeToFit>
+          {symbol.label}
+        </Text>
+      </View>
     </TouchableOpacity>
   );
 };
@@ -83,40 +107,47 @@ const styles = StyleSheet.create({
   button: {
     flex: 1,
     aspectRatio: 1,
-    margin: 6,
-    borderRadius: 16,
+    margin: SPACING.sm,
+    borderRadius: RADIUS.lg,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
+    padding: SPACING.sm,
+    borderWidth: 3,
+    borderColor: 'rgba(0, 0, 0, 0.15)',
+    shadowColor: COLORS.shadow,
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.25,
     shadowRadius: 4,
-    elevation: 4,
+    elevation: 5,
   },
-  iconContainer: {
+  imageContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
+    padding: SPACING.xs,
+  },
+  symbolImage: {
+    width: '90%',
+    height: '90%',
+    borderRadius: RADIUS.sm,
   },
   emoji: {
-    fontSize: 64,
+    fontSize: FONTS.emoji,
     textAlign: 'center',
   },
-  customImage: {
-    width: '80%',
-    height: '80%',
-    borderRadius: 12,
+  labelContainer: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.xs,
+    borderRadius: RADIUS.sm,
+    marginTop: SPACING.xs,
+    minWidth: '85%',
   },
   label: {
-    fontSize: 20,
+    fontSize: FONTS.labelMedium,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: COLORS.textLight,
     textAlign: 'center',
-    textShadowColor: 'rgba(0, 0, 0, 0.5)',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 2,
-    marginTop: 4,
   },
 });
